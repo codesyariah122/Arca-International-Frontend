@@ -69,7 +69,7 @@
 					confirmButtonText: 'Yes, delete it!'
 				}).then((result) => {
 					if (result.isConfirmed) {
-						this.axios.delete(`https://arcacorp-frontend-test.netlify.app/api/employee/${id}`)
+						this.axios.delete(`https://arca-international-backend.herokuapp.com/api/employee/${id}`)
 						.then(() => {
 							// splice data
 							this.employees.splice(this.employees.indexOf(id), id)
